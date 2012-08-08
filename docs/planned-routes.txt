@@ -1,0 +1,61 @@
+
+/discover
+	-> /bill
+		-> /:bill
+			-> /summary
+			-> /text
+			-> /edit
+			-> /propose
+			-> /distribute
+			-> /discuss
+			-> /decide
+			-> /demand
+		-> /popular
+		-> /latest
+		-> /passed
+		-> /search
+		-> /propose
+		-> /by-city
+			-> /:city-name
+				-> /all
+				-> /latest
+				-> /popular
+				-> /passed
+	-> /representative
+		-> /:rep-name
+			-> /view
+			-> /contact
+			-> /record
+			-> /distribute
+			-> /discuss
+			-> /decide
+			-> /demand
+		-> /popular
+		-> /latest
+		-> /elected
+		-> /search
+	-> /group
+		-> /:group-name
+			-> /view
+			-> /contact
+			-> /members
+			-> /join
+		-> /all
+		-> /popular
+		-> /latest
+		-> /search
+		-> /by-theme
+			-> /:theme-name
+				-> /all
+				-> /popular
+				-> /latest
+
+
+
+/distribute
+
+/discuss
+
+/decide
+
+/demand
