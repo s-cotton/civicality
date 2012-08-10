@@ -1,0 +1,16 @@
+Law
+
+Bill
+
+Motion
+
+User
+	-> Analyst
+	-> Constituent
+	-> Representative
+
+Group
+
+Discussion
+
+Comment
