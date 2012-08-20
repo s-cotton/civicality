@@ -1,5 +1,415 @@
 
 /discover
+	-> /law
+	-> /l
+		-> /:law-name 			||
+		-> /:law-id 			||
+		-> /:law-openstate-id
+			-> /summary
+			-> /status
+			-> /text
+			-> /edit
+			-> /propose
+			-> /distribute
+			-> /discuss
+			-> /demand
+			-> /related
+				-> /laws
+				-> /bills
+				-> /motions
+				-> /breifs
+		-> /popular
+		-> /latest
+		-> /status
+		-> /search
+		-> /propose
+		
+		-> /by-locale
+			-> /search
+			-> /all
+			-> /request
+			
+		-> /locale
+			-> /:locale-name ||
+			-> /:locale-id
+				-> /all
+				-> /latest
+				-> /popular
+				-> /status
+		
+		-> /by-theme
+			-> /search
+			-> /all
+			-> /request
+			
+		-> /theme
+			-> /:theme-name ||
+			-> /:theme-id 
+				-> /all
+				-> /popular
+				-> /latest
+				-> /status
+
+		-> /by-tag
+			-> /search
+			-> /all
+			-> /request
+			
+		-> /tag
+			-> /:tag-name ||
+			-> /:tag-id 
+				-> /all
+				-> /popular
+				-> /latest
+				-> /status
+
+	-> /bill
+	-> /b
+		-> /:bill
+			-> /summary
+			-> /status
+			-> /text
+			-> /edit
+			-> /propose
+			-> /distribute
+			-> /discuss
+			-> /decide
+			-> /demand
+		-> /popular
+		-> /latest
+		-> /status
+		-> /search
+		-> /propose
+		
+		-> /by-locale
+			-> /search
+			-> /all
+			-> /request
+			
+		-> /locale
+			-> /:locale-name ||
+			-> /:locale-id
+				-> /all
+				-> /latest
+				-> /popular
+				-> /status
+		
+		-> /by-theme
+			-> /search
+			-> /all
+			-> /request
+			
+		-> /theme
+			-> /:theme-name ||
+			-> /:theme-id 
+				-> /all
+				-> /popular
+				-> /latest
+				-> /status
+
+		-> /by-tag
+			-> /search
+			-> /all
+			-> /request
+			
+		-> /tag
+			-> /:tag-name ||
+			-> /:tag-id 
+				-> /all
+				-> /popular
+				-> /latest
+				-> /status
+
+	-> /motion
+	-> /m
+		-> /:motion-name	||
+		-> /:motion-id
+			-> /summary
+			-> /status
+			-> /text
+			-> /edit
+			-> /propose
+			-> /distribute
+			-> /discuss
+			-> /demand
+			-> /related
+				-> /laws
+				-> /bills
+				-> /motions
+				-> /breifs
+		-> /popular
+		-> /latest
+		-> /status
+		-> /search
+		-> /propose
+		
+		-> /by-locale
+			-> /search
+			-> /all
+			-> /request
+			
+		-> /locale
+			-> /:locale-name ||
+			-> /:locale-id
+				-> /all
+				-> /latest
+				-> /popular
+				-> /status
+		
+		-> /by-theme
+			-> /search
+			-> /all
+			-> /request
+			
+		-> /theme
+			-> /:theme-name ||
+			-> /:theme-id 
+				-> /all
+				-> /popular
+				-> /latest
+				-> /status
+
+		-> /by-tag
+			-> /search
+			-> /all
+			-> /request
+			
+		-> /tag
+			-> /:tag-name ||
+			-> /:tag-id 
+				-> /all
+				-> /popular
+				-> /latest
+				-> /status
+
+	-> /representative
+	-> /rep
+	-> /r
+		-> /:district 	||
+		-> /:rep-name	||
+		-> /:rep-id
+			-> /view
+			-> /contact
+			-> /record
+			-> /distribute
+			-> /discuss
+			-> /decide
+			-> /demand
+		-> /popular
+		-> /latest
+		-> /elected
+		-> /search
+
+		-> /by-locale
+			-> /search
+			-> /all
+			-> /request
+			
+		-> /locale
+			-> /:locale-name ||
+			-> /:locale-id
+				-> /all
+				-> /latest
+				-> /popular
+				-> /status
+		
+		-> /by-party
+			-> /search
+			-> /all
+			-> /request
+			
+		-> /party
+			-> /:party-name
+				-> /all
+				-> /popular
+				-> /latest
+				-> /status
+
+		-> /by-tag
+			-> /search
+			-> /all
+			-> /request
+			
+		-> /tag
+			-> /:tag-name ||
+			-> /:tag-id 
+				-> /all
+				-> /popular
+				-> /latest
+				-> /status
+
+	-> /committee
+	-> /c
+		-> /:committee-name
+			-> /view
+			-> /contact
+			-> /members
+		
+		-> /all
+		-> /popular
+		-> /latest
+		-> /search
+
+		-> /by-locale
+			-> /search
+			-> /all
+			-> /request
+			
+		-> /locale
+			-> /:locale-name ||
+			-> /:locale-id
+				-> /all
+				-> /latest
+				-> /popular
+				-> /status
+		
+		-> /by-theme
+			-> /search
+			-> /all
+			-> /request
+			
+		-> /theme
+			-> /:theme-name ||
+			-> /:theme-id 
+				-> /all
+				-> /popular
+				-> /latest
+				-> /status
+
+		-> /by-tag
+			-> /search
+			-> /all
+			-> /request
+			
+		-> /tag
+			-> /:tag-name ||
+			-> /:tag-id 
+				-> /all
+				-> /popular
+				-> /latest
+				-> /status
+	-> /group
+	-> /g
+		-> /:group-name
+			-> /view
+			-> /contact
+			-> /members
+			-> /join
+		-> /all
+		-> /popular
+		-> /latest
+		-> /search
+
+		-------------------------
+		|	Groups by Locale 	|
+		-------------------------
+
+		-> /by-locale
+			-> /search
+			-> /all
+			-> /request
+			
+		-> /locale
+			-> /:locale-name ||
+			-> /:locale-id
+				-> /all
+				-> /latest
+				-> /popular
+				-> /status
+		
+		-------------------------
+		|	Groups by Theme 	|
+		-------------------------
+		-> /by-theme
+			-> /search
+			-> /all
+			-> /request
+		
+
+		-> /theme
+			-> /:theme-name ||
+			-> /:theme-id 
+				-> /all
+				-> /popular
+				-> /latest
+				-> /status
+
+		-------------------------
+		|	Groups by Tag 		|
+		-------------------------
+
+		-> /by-tag
+			-> /search
+			-> /all
+			-> /request
+			
+		-> /tag
+			-> /:tag-name ||
+			-> /:tag-id 
+				-> /all
+				-> /popular
+				-> /latest
+				-> /status
+
+		-------------------------
+		|	Groups by Party 	|
+		-------------------------
+
+		-> /by-party
+			-> /search			(default)
+			-> /all
+			-> /request
+
+		-> /party
+			-> /:party-name
+				-> /all 		(default)
+				-> /popular
+				-> /latest
+				-> /status
+/distribute
+	-> /bill
+	-> /b
+		-> /:bill
+			-> /summary
+			-> /text
+				-> /excerpt
+					-> /sel
+						-> /:hash
+					-> /paragraph
+					-> /p
+						-> /2
+					-> /sentence
+					-> /s
+						-> /5
+					-> /word
+					-> /w
+						-> /345
+						-> /13/12
+						-> /13/w/15
+					/(p:25 | s:[] |  )
+				-> /sel-[20:50]
+			-> /edit
+			-> /proposal
+
+			-> /discover (redirect)
+			-> /discuss (redirect)
+				-> /poll
+				-> /activity
+			-> /decide (poll)
+			-> /demand
+		-> /popular
+		-> /latest
+		-> /passed
+		-> /search
+		-> /propose
+		-> /by-city
+			-> /:city-name
+				-> /all
+				-> /latest
+				-> /popular
+				-> /passed
+
+/discuss
 	-> /bill
 		-> /:bill
 			-> /summary
@@ -22,6 +432,7 @@
 				-> /popular
 				-> /passed
 	-> /representative
+		-> /:district ||
 		-> /:rep-name
 			-> /view
 			-> /contact
@@ -49,13 +460,6 @@
 				-> /all
 				-> /popular
 				-> /latest
-
-
-
-/distribute
-
-/discuss
-
 /decide
 
 /demand

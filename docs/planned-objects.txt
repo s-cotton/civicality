@@ -1,13 +1,76 @@
 Law
+	-> Who
+		-> Sponsors
+		-> Votes
+	-> What
+		-> Chamber Name
+		-> House Name
+		-> Alternative Names
+		-> THOMAS Code
+		-> Library of Congress ID
+
+		-> OpenCongress ID
+		-> OpenStates ID
+		-> Source ID
+		
+		-> User Generated
+			-> Date Entered
+			-> Revision
+			-> User Entered
+			-> Confirmation
+
+		-> User Submitted
+			-> Date Created
+			-> Revision
+			-> User Entered
+			-> Confirmed
+
+	-> Where
+		-> Locale
+		-> Jurisdiction
+		-> Committee
+		
+	-> When
+		-> Introduced
+		-> Actions
+		-> Last Action
+		-> Roll Calls
+		-> Last Passed
+		-> Ready for Signature
+		-> Last Status
+
+	-> Sources
+		-> <SOURCE>
+			-> URL
+			-> Scraper
+			-> Scrapeable
+			-> Last Updated
+			-> Source Type
+			-> Source Map
+
+		-> <SOURCE>
+			-> ...
+
 
 Bill
 
 Motion
 
-User
-	-> Analyst
+Person
+	-> Unknown
 	-> Constituent
-	-> Representative
+	-> Analyst
+	-> Staffer
+	-> Elected
+		-> Representative
+		-> Senator
+		-> Governor
+		-> Lt. Governor
+		-> President
+		-> Vice President
+		-> Local Representative
+		-> ...
+		-> TITLE
 
 Group
 

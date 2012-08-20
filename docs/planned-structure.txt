@@ -1,0 +1,62 @@
+SECTIONS
+
+	Controllers
+		-> civicality/
+			-> <SECTION>.php
+			-> <OBJECT>/<SECTION>.php
+		
+
+
+OBJECTS
+
+	controller/
+		-> civicality/
+			-> <OBJECT>.php
+			-> <OBJECT>/
+				-> related.php
+				-> filter/
+				-> related/
+			-> <OBJECT_REL>/
+				-> related/
+					-> <OBJECT>.php
+	model/
+		-> <OBJECT>.php
+		-> <OBJECT>/
+			-> scraper.php
+			-> metadata.php
+			-> opengraph.php
+			-> api.php
+
+FILTERS
+	controller/
+		-> civicality/
+			-> filter/
+				-> <FILTER>.php
+				-> filter
+					-> <OBJECT>.php
+			-> <OBJECT>
+				-> /filter
+					-> <FILTER>.php
+	model/
+		-> filter/
+			-> <FILTER>.php
+			-> <FILTER>/
+				-> <OBJECT>.php
+
+
+INTERFACES
+	model/
+		-> interfaces/
+			-> <INTERFACE>.php
+ABSTRACT
+	model/
+		-> abstract/
+			-> <ABSTRACT>.php
+TRAIT
+	model/
+		-> trait/
+			-> <TRAIT>.php
+BASE
+	model/
+		-> base/
+			-> <BASE>.php
