@@ -1,12 +1,10 @@
-SECTIONS
+SECTION
 
 	Controllers
 		-> civicality/
 			-> <SECTION>.php
 			-> <OBJECT>/<SECTION>.php
 		
-
-
 OBJECTS
 
 	controller/
