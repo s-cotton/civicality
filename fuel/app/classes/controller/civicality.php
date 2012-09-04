@@ -1,10 +1,35 @@
 <?php
 
-use \Fuel\Core;
+use Fuel\Core;
 
-class Controller_Civicality extends Controller_Template {
+class Controller_Civicality extends \Fuel\Core\Controller_Hybrid {
 
 	public $_use_template = true;
+	public $_is_api = false;
+
+	public $_state = array();
+
+	public function state(){
+		if($this->param('context')){
+			$this->_state['context'] = $this->params('context');
+		} else {
+			if($this->request->uri != ''){
+				$uri_parts = explode('/',$this->request->uri);
+				$this->_state['context'] = $uri_parts[0];
+			} else {
+				
+			}
+		}
+		
+		if($this->param('type')){
+			$this->_state['api_type'] = $this->param('type');
+		} else {
+			$this->_state['api_type'] = 'json';
+		}
+		if($this->param('key')){
+			$this->_state['api_key'] = $this->param('key');
+		}
+	}
 
 	public function before($data = null){
 		parent::before();
